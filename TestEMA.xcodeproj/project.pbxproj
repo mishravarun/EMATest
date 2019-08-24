@@ -14,6 +14,9 @@
 		8B201F422311A9580091485B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B201F402311A9580091485B /* LaunchScreen.storyboard */; };
 		8B201F4D2311A9580091485B /* TestEMATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B201F4C2311A9580091485B /* TestEMATests.swift */; };
 		8B201F582311A9580091485B /* TestEMAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B201F572311A9580091485B /* TestEMAUITests.swift */; };
+		8B201F662311A9FE0091485B /* EMATask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B201F652311A9FE0091485B /* EMATask.swift */; };
+		8B201F712311AB260091485B /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B201F6E2311AB150091485B /* ResearchKit.framework */; };
+		8B201F722311AB260091485B /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B201F6E2311AB150091485B /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +34,42 @@
 			remoteGlobalIDString = 8B201F332311A9550091485B;
 			remoteInfo = TestEMA;
 		};
+		8B201F6D2311AB150091485B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B201F672311AB150091485B /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		8B201F6F2311AB150091485B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B201F672311AB150091485B /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		8B201F732311AB260091485B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B201F672311AB150091485B /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8B201F752311AB260091485B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B201F722311AB260091485B /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8B201F342311A9550091485B /* TestEMA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestEMA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +85,8 @@
 		8B201F532311A9580091485B /* TestEMAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestEMAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B201F572311A9580091485B /* TestEMAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEMAUITests.swift; sourceTree = "<group>"; };
 		8B201F592311A9580091485B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B201F652311A9FE0091485B /* EMATask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EMATask.swift; sourceTree = "<group>"; };
+		8B201F672311AB150091485B /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B201F712311AB260091485B /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +118,7 @@
 		8B201F2B2311A9550091485B = {
 			isa = PBXGroup;
 			children = (
+				8B201F672311AB150091485B /* ResearchKit.xcodeproj */,
 				8B201F362311A9550091485B /* TestEMA */,
 				8B201F4B2311A9580091485B /* TestEMATests */,
 				8B201F562311A9580091485B /* TestEMAUITests */,
@@ -99,6 +141,7 @@
 			children = (
 				8B201F372311A9550091485B /* AppDelegate.swift */,
 				8B201F392311A9550091485B /* ViewController.swift */,
+				8B201F652311A9FE0091485B /* EMATask.swift */,
 				8B201F3B2311A9550091485B /* Main.storyboard */,
 				8B201F3E2311A9580091485B /* Assets.xcassets */,
 				8B201F402311A9580091485B /* LaunchScreen.storyboard */,
@@ -125,6 +168,15 @@
 			path = TestEMAUITests;
 			sourceTree = "<group>";
 		};
+		8B201F682311AB150091485B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B201F6E2311AB150091485B /* ResearchKit.framework */,
+				8B201F702311AB150091485B /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +187,12 @@
 				8B201F302311A9550091485B /* Sources */,
 				8B201F312311A9550091485B /* Frameworks */,
 				8B201F322311A9550091485B /* Resources */,
+				8B201F752311AB260091485B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8B201F742311AB260091485B /* PBXTargetDependency */,
 			);
 			name = TestEMA;
 			productName = TestEMA;
@@ -215,6 +269,12 @@
 			mainGroup = 8B201F2B2311A9550091485B;
 			productRefGroup = 8B201F352311A9550091485B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8B201F682311AB150091485B /* Products */;
+					ProjectRef = 8B201F672311AB150091485B /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8B201F332311A9550091485B /* TestEMA */,
@@ -223,6 +283,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8B201F6E2311AB150091485B /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 8B201F6D2311AB150091485B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8B201F702311AB150091485B /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 8B201F6F2311AB150091485B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8B201F322311A9550091485B /* Resources */ = {
@@ -256,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B201F662311A9FE0091485B /* EMATask.swift in Sources */,
 				8B201F3A2311A9550091485B /* ViewController.swift in Sources */,
 				8B201F382311A9550091485B /* AppDelegate.swift in Sources */,
 			);
@@ -289,6 +367,11 @@
 			isa = PBXTargetDependency;
 			target = 8B201F332311A9550091485B /* TestEMA */;
 			targetProxy = 8B201F542311A9580091485B /* PBXContainerItemProxy */;
+		};
+		8B201F742311AB260091485B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 8B201F732311AB260091485B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -431,6 +514,7 @@
 		8B201F5D2311A9580091485B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestEMA/Info.plist;
@@ -448,6 +532,7 @@
 		8B201F5E2311A9580091485B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TestEMA/Info.plist;
